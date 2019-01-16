@@ -100,7 +100,7 @@ body article {
 }
 
 .article-img {
-	opacity: 0.6;
+	opacity: 0.75;
 	max-height: auto;
 	max-width: 30%;
 	border: 1px solid gray;
