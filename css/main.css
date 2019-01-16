@@ -99,6 +99,14 @@ body article {
 	animation: fadeIn 2s linear forwards;
 }
 
+.main-article-left {
+	float: left;
+}
+
+.main-article-right {
+	float: right;
+}
+
 .article-img {
 	opacity: 0.85;
 	background-color: white;
