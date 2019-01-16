@@ -93,18 +93,11 @@ body article {
 	background-color: white;
 	margin: 10px;
 	padding: 15px;
+	width: 100%;
 	opacity: 0.85;
 	border-radius: 10px;
 	-webkit-animation: fadeIn 2s linear forwards;
 	animation: fadeIn 2s linear forwards;
-}
-
-.main-article-left {
-	float: left;
-}
-
-.main-article-right {
-	float: right;
 }
 
 .article-img {
