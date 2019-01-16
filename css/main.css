@@ -1,0 +1,175 @@
+/*
+Palette:
+#5a87ba,
+#6fa6e4,
+#080c10,
+#1c2a3a,
+#314965,
+#45688f
+*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: #314965;
+}
+
+head {
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	line-height: 375px;
+	vertical-align: bottom;
+	height: 220px;
+	background: linear-gradient(to bottom, rgba(8, 12, 16, 0) 0%, rgba(8, 12, 16, 0.5) 85%, rgba(8, 12, 16, 1) 100%), url("../res/images/JAPAN-64_.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	background-color: #5a87ba;
+}
+
+header h1 {
+	color: white;
+	font-size: 55px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	opacity: 0.85;
+	margin-left: 25px;
+	animation: fadeIn 2s linear forwards;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	overflow: hidden;
+	background-color: #080c10;
+	opacity: 0.9;
+	vertical-align: top;
+}
+
+nav li {
+float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #6fa6e4;	
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.sticky + .content {
+	padding-top: 50px;
+}
+
+body article {
+	background-color: white;
+	margin: 10px;
+	padding: 15px;
+	opacity: 0.85;
+	border-radius: 10px;
+	-webkit-animation: fadeIn 2s linear forwards;
+	animation: fadeIn 2s linear forwards;
+}
+
+.article-img {
+	max-height: auto;
+	max-width: 30%;
+	border: 1px solid gray;
+	padding: 2px;
+	margin: 10px;
+}
+
+.img-right {
+	float:right;
+}
+
+.img-left {
+	float:left;
+}
+
+@-webkit-keyframes fadeIn {
+	0%, 15% { opacity: 0; }
+	100% { opacity: 0.85; }
+}
+
+@keyframes fadeIn {
+	0%, 15% { opacity: 0; }
+	100% { opacity: 0.85; }
+}
+
+.portfolio-article  {
+}
+
+.portfolio-article-left  {
+	margin-top: 0;
+	width: 45%;
+	float: left;
+}
+
+.portfolio-article-right  {
+	margin-top: 0;
+	width: 45%;
+	margin-left: 50%;
+}
+
+.portfolio-subtitle {
+	text-align: center;
+	color: white;
+	opacity: 0.9;
+}
+
+.github-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.language-icon {
+	float: right;
+	margin-right: 16px;
+	width: 32px;
+	height: 32px;
+}
+
+.article-controls {
+	float:right;
+	margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.portfolio-article-left  {
+		width: 80vh;
+		float: none;
+		clear: both;
+	}
+
+	.portfolio-article-right  {
+		width: 80vh;
+		margin-left: 10px;
+		float: none;
+		clear: both;
+	}
+}
