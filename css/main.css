@@ -41,6 +41,10 @@ header h1 {
 	animation: fadeIn 2s linear forwards;
 }
 
+header h1:hover {
+	opacity: 1;
+}
+
 nav {
 	margin: 0;
 	padding: 0;
@@ -101,6 +105,10 @@ body article {
 	border: 1px solid gray;
 	padding: 2px;
 	margin: 10px;
+}
+
+.article-img:hover {
+	opacity: 1;
 }
 
 .img-right {
