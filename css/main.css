@@ -63,7 +63,7 @@ nav ul {
 }
 
 nav li {
-float: left;
+	float: left;
 }
 
 nav li a {
@@ -93,7 +93,7 @@ body article {
 	background-color: white;
 	margin: 10px;
 	padding: 15px;
-	width: 100%;
+	width: 100vw;
 	opacity: 0.85;
 	border-radius: 10px;
 	-webkit-animation: fadeIn 2s linear forwards;
@@ -137,13 +137,13 @@ body article {
 
 .portfolio-article-left  {
 	margin-top: 0;
-	width: 45%;
+	width: 45vw;
 	float: left;
 }
 
 .portfolio-article-right  {
 	margin-top: 0;
-	width: 45%;
+	width: 45vw;
 	margin-left: 50%;
 }
 
@@ -170,7 +170,7 @@ body article {
 	margin-right: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
 	.portfolio-article-left  {
 		width: 80vh;
 		float: none;
