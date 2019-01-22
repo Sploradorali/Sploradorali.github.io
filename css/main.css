@@ -177,13 +177,13 @@ body article {
 
 @media only screen and (max-width: 720px) {
 	.portfolio-article-left  {
-		width: 80vh;
+		width: 80vw;
 		float: none;
 		clear: both;
 	}
 
 	.portfolio-article-right  {
-		width: 80vh;
+		width: 80vw;
 		margin-left: 10px;
 		float: none;
 		clear: both;
