@@ -21,6 +21,23 @@ html, body {
 	background-color: #314965;
 }
 
+.scroll-disabled {
+	overflow: hidden;
+}
+
+.expanded {
+}
+
+.collapsed {
+	height: 220px;
+	transition: height 1200ms ease-in-out;
+}
+
+@keyframes splash-collapse {
+	from {height: 100vh;}
+	to {height: 220px;}
+}
+
 header {
 	text-align: left;
 	line-height: 375px;
@@ -46,6 +63,41 @@ header h1 {
 
 header h1:hover {
 	opacity: 1;
+}
+
+#home-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+	margin: 10px;
+	opacity: 0.7;
+	z-index: 999;
+}
+
+#home-icon img {
+	height: 30px;
+}
+
+#portal-enter {
+	position: absolute;
+	bottom: 0;
+	margin: 50px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 32px;
+	opacity: 0.7;
+	z-index: 999;
+	
+	cursor: pointer;
+	animation: pulsate 3s linear infinite;
+}
+
+@keyframes pulsate {
+	from { opacity: 1; }
+	50% { opacity: 0.3; }
+	to { opacity: 1; }
 }
 
 nav {
@@ -76,7 +128,11 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: #6fa6e4;	
+	background-image: radial-gradient(rgba(90, 135, 186, 1) 0%, rgba(90, 135, 186, 0.75) 35%, rgba(90, 135, 186, 0.3) 55%, rgba(90, 135, 186, 0) 70%);
+}
+
+.active {
+	background-image: radial-gradient(rgba(90, 135, 186, 0.8) 0%, rgba(90, 135, 186, 0.4) 30%, rgba(90, 135, 186, 0) 80%);
 }
 
 .sticky {
