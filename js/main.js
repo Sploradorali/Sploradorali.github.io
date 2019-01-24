@@ -6,6 +6,7 @@ var stickThreshold = navbar.offsetTop;
 var enterPortal = document.getElementById("portal-enter");
 var header = document.getElementById("expanding-header");
 
+window.onbeforeunload = function() { window.scrollTo(0,0); };
 window.onload = function() { header.style.height =  window.innerHeight + "px"; };
 
 window.onscroll = function(){ stickOnScroll() };
